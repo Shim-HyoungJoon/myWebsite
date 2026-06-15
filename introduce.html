@@ -33,7 +33,8 @@
             padding: 0;
         }
 
-        html, body {
+        html,
+        body {
             height: 100%;
         }
 
@@ -76,8 +77,13 @@
         }
 
         @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
         }
 
         .profile-icon span {
@@ -103,6 +109,23 @@
             margin-bottom: 20px;
             text-align: center;
         }
+
+        .back-btn {
+            text-align: center;
+            text-decoration: none;
+            background-color: #c4c4c4;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-weight: 500;
+            font-size: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.5s ease, transform 0.5s ease;
+        }
+        .back-btn:hover {
+            background-color: rgb(0, 0, 94);
+            transform: translateY(-3px);
+        }
     </style>
 
 </head>
@@ -123,6 +146,9 @@
             <p class="intro-text">
                 맛집은 항상 좋아!
             </p>
+            <div class="detail-action">
+                <a href="./index.html" class="back-btn">돌아가기</a>
+            </div>
         </div>
 
     </div>
